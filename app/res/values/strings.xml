@@ -1,0 +1,12 @@
+<resources>
+    <string name="app_name">Jieshuo Extension</string>
+    <string name="service_summary">The most useful utilities for your screen reader</string>
+    <string name="service_description">
+        - The extension can be useful in next situations:
+        \n 1) Typing: Type speedly (Warning: Its works well only with Gboard)
+        \n 2) Samsung internet: This tool can help with Samsung internet accessibility for Jieshuo Screen Reader
+        \n Developed by Aisulu Ait (Smit TV)
+        \n Open source 
+        \n https://github.com/Smit-TV
+    </string>
+</resources>
