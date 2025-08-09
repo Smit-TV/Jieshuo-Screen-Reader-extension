@@ -1,0 +1,36 @@
+<resources>
+    <string name="app_name">Jieshuo Extension</string>
+    <string name="service_summary">Type faster</string>
+    <string name="service_description">
+        This extension is useful in the following situations:
+        \n 1. The extension provides Jieshuo, VoiceBack, and Prudence with access to Samsung Internet
+        \n 2. This extension allows faster typing on the Samsung keyboard
+        \n Note that not all keyboards may be supported; you may need to enable double-tap typing in your screen reader settings
+        \n\n Created by Smit TV
+        \n https://github.com/Smit-TV
+    </string>
+    <string name="typing">Keyboard</string>
+    <string name="single_tap_to_activate">Activate keys with a single tap</string>
+    <string name="single_tap_to_activate_summary">Don’t forget to enable double-tap key activation in your screen reader</string>
+    <string name="disable_gestures_when_keyboard_is_shown">Disable gestures when the keyboard is shown</string>
+    <string name="disable_gestures_when_keyboard_is_shown_summary">
+        Gestures in the keyboard area will be disabled.
+        \n Note that double-tap will not work in the keyboard area.
+        \n This feature may not work with TalkBack.
+    </string>
+    <string name="long_press_delay">Long press delay</string>
+    <string name="long_press_delay_summary">
+        Long press works when holding down keys.
+        \n Use 0 to disable this feature
+    </string>
+    <string name="general">General</string>
+    <string name="accessibility_settings">Open accessibility settings</string>
+    <string name="donate">Donate</string>
+    <string name="donate_message">
+        Thanks to everyone who made a donation!
+        \n Tap "Continue" to go to the donation page
+    </string>
+    <string name="continue_donate">Continue</string>
+    <string name="cancel">Cancel</string>
+    <string name="official_tg_channel">Telegram channel</string>
+</resources>

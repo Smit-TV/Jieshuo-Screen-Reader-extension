@@ -1,0 +1,36 @@
+<resources>
+    <string name="app_name">Jieshuo 扩展</string>
+    <string name="service_summary">更快地打字</string>
+    <string name="service_description">
+        此扩展在以下情况下很有用：
+        \n 1. 为 Jieshuo、VoiceBack 和 Prudence 提供对 Samsung Internet 的访问权限
+        \n 2. 使在 Samsung 键盘上的输入速度更快
+        \n 请注意，并非所有键盘都支持此功能；您可能需要在屏幕阅读器设置中启用双击输入
+        \n\n 由 Smit TV 制作
+        \n https://github.com/Smit-TV
+    </string>
+    <string name="typing">键盘</string>
+    <string name="single_tap_to_activate">单击激活按键</string>
+    <string name="single_tap_to_activate_summary">请不要忘记在屏幕阅读器中启用双击按键激活</string>
+    <string name="disable_gestures_when_keyboard_is_shown">键盘显示时禁用手势</string>
+    <string name="disable_gestures_when_keyboard_is_shown_summary">
+        键盘区域的手势将被禁用。
+        \n 请注意，在键盘区域双击将不起作用。
+        \n 此功能可能无法与 TalkBack 一起使用。
+    </string>
+    <string name="long_press_delay">长按延迟</string>
+    <string name="long_press_delay_summary">
+        长按适用于按住按键时。
+        \n 使用 0 可禁用此功能
+    </string>
+    <string name="general">通用</string>
+    <string name="accessibility_settings">打开辅助功能设置</string>
+    <string name="donate">捐赠</string>
+    <string name="donate_message">
+        感谢所有捐赠的人！
+        \n 点击“继续”进入捐赠页面
+    </string>
+    <string name="continue_donate">继续</string>
+    <string name="cancel">取消</string>
+    <string name="official_tg_channel">Telegram 频道</string>
+</resources>

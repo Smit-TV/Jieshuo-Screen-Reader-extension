@@ -1,0 +1,36 @@
+<resources>
+    <string name="app_name">Extensión Jieshuo</string>
+    <string name="service_summary">Escribe más rápido</string>
+    <string name="service_description">
+        Esta extensión es útil en las siguientes situaciones:
+        \n 1. La extensión proporciona acceso a Samsung Internet para Jieshuo, VoiceBack y Prudence
+        \n 2. Esta extensión permite escribir más rápido en el teclado de Samsung
+        \n Tenga en cuenta que no todos los teclados pueden ser compatibles; es posible que deba activar la escritura con doble toque en la configuración de su lector de pantalla
+        \n\n Creado por Smit TV
+        \n https://github.com/Smit-TV
+    </string>
+    <string name="typing">Teclado</string>
+    <string name="single_tap_to_activate">Activar teclas con un solo toque</string>
+    <string name="single_tap_to_activate_summary">No olvide activar la función de doble toque en su lector de pantalla</string>
+    <string name="disable_gestures_when_keyboard_is_shown">Desactivar gestos cuando el teclado esté visible</string>
+    <string name="disable_gestures_when_keyboard_is_shown_summary">
+        Los gestos en el área del teclado estarán desactivados.
+        \n Tenga en cuenta que el doble toque no funcionará en el área del teclado.
+        \n Esta función puede no funcionar con TalkBack.
+    </string>
+    <string name="long_press_delay">Retraso para pulsación larga</string>
+    <string name="long_press_delay_summary">
+        La pulsación larga funciona manteniendo presionadas las teclas.
+        \n Use 0 para desactivar esta función
+    </string>
+    <string name="general">General</string>
+    <string name="accessibility_settings">Abrir ajustes de accesibilidad</string>
+    <string name="donate">Donar</string>
+    <string name="donate_message">
+        ¡Gracias a todos los que han hecho una donación!
+        \n Pulse "Continuar" para ir a la página de donaciones
+    </string>
+    <string name="continue_donate">Continuar</string>
+    <string name="cancel">Cancelar</string>
+    <string name="official_tg_channel">Canal de Telegram</string>
+</resources>

@@ -2,11 +2,35 @@
     <string name="app_name">Jieshuo Extension</string>
     <string name="service_summary">Печатайте быстрее</string>
     <string name="service_description">
-Данное расширение полезно в следующих ситуациях
-\n 1. Расширение дает доступ Jieshuo, VoiceBack и Prudence к Samsung Internet
-\n 2. Данное расширение позволяет печатать быстрее в Samsung клавиатуре 
-\n Обратите внимание что не все клавиатуры могут поддерживаться, возможно вам придется включить двойное нажатие для печати в настройках вашего экранного диктора
-\n\n Создано Smit TV
-\n https://github.com/Smit-TV
+        Данное расширение полезно в следующих ситуациях
+        \n 1. Расширение дает доступ Jieshuo, VoiceBack и Prudence к Samsung Internet
+        \n 2. Данное расширение позволяет печатать быстрее в Samsung клавиатуре 
+        \n Обратите внимание, что не все клавиатуры могут поддерживаться, возможно, вам придется включить двойное нажатие для печати в настройках вашего экранного диктора
+        \n\n Создано Smit TV
+        \n https://github.com/Smit-TV
     </string>
+    <string name="typing">Клавиатура</string>
+    <string name="single_tap_to_activate">Активировать клавиши одним нажатием</string>
+    <string name="single_tap_to_activate_summary">Не забудьте включить активацию клавиш двойным нажатием в вашем экранном дикторе</string>
+    <string name="disable_gestures_when_keyboard_is_shown">Отключить жесты, когда клавиатура открыта</string>
+    <string name="disable_gestures_when_keyboard_is_shown_summary">
+        Жесты в области клавиатуры будут отключены.
+        \n Обратите внимание, что в области клавиатуры двойное нажатие работать не будет.
+        \n Эта функция может не работать с TalkBack.
+    </string>
+    <string name="long_press_delay">Задержка перед долгим нажатием</string>
+    <string name="long_press_delay_summary">
+        Долгое нажатие работает при зажатии клавиш.
+        \n Используйте 0 для отключения этой функции
+    </string>
+<string name="general">Общие</string>
+<string name="accessibility_settings">Открыть специальные возможности</string>
+<string name="donate">Сделать пожертвование</string>
+<string name="donate_message">
+Спасибо всем тем кто сделал пожертвование!
+\n Нажмите "Продолжить" чтобы перейти на страницу пожертвований
+</string>
+<string name="continue_donate">Продолжить</string>
+<string name="cancel">Отмена</string>
+<string name="official_tg_channel">Telegram канал</string>
 </resources>

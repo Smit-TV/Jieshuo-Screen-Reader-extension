@@ -13,4 +13,5 @@
     android:notificationTimeout="0"
     android:interactiveUiTimeout="10000"
     android:canPerformGestures="false"
-    android:isAccessibilityTool="true" />
+    android:isAccessibilityTool="true"
+    android:settingsActivity="com.android.talkback.MainActivity" />
