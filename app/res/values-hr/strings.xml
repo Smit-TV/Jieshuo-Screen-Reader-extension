@@ -1,0 +1,36 @@
+<resources>
+    <string name="app_name">Jieshuo Extension</string>
+    <string name="service_summary">Pišite brže</string>
+    <string name="service_description">
+        Ovaj je dodatak koristan u slijedećim situacijama
+        \n 1. Dodatak čini dostupnim internetski preglednik Samsung Internet čitačima zaslona Jieshuo, VoiceBack и Prudence
+        \n 2. Ovaj dodatak omogućava brže pisanje teksta na tipkovnici Samsung keyboard 
+        \n Imajte na umu da nisu sve tipkovnice podržane. Možda ćete morati uključiti pisanje dvostrukim dodirom u postavkama vašeg čitača zaslona
+        \n\n Napisao Smit TV
+        \n https://github.com/Smit-TV
+    </string>
+    <string name="typing">Tipkovnica</string>
+    <string name="single_tap_to_activate">Aktiviraj tipke jednim dodirom</string>
+    <string name="single_tap_to_activate_summary">Nemojte zaboraviti uključiti pisanje dvostrukim dodirom u vašem čitaču zaslona</string>
+    <string name="disable_gestures_when_keyboard_is_shown">Isključi geste kad je tipkovnica aktivna</string>
+    <string name="disable_gestures_when_keyboard_is_shown_summary">
+        Geste na području tipkovnice bit će isključene.
+        \n Imajte na umu da na području tipkovnice neće raditi dvostruki dodir.
+        \n Ova funkcija možda neće ispravno raditi s TalkBackom.
+    </string>
+    <string name="long_press_delay">zadrška kod dugog pritiska</string>
+    <string name="long_press_delay_summary">
+        Dugi pritisak radi kada su tipke pritisnute.
+        \n Koristite 0 kako biste isključili ovu funkciju
+    </string>
+<string name="general">Općenito</string>
+<string name="accessibility_settings">Otvori postavke pristupačnosti</string>
+<string name="donate">Doniraj</string>
+<string name="donate_message">
+Hvala svima koji su donirali!
+\n Pritisnite "nastaviь" kako biste otvorili stranicu za doniranje
+</string>
+<string name="continue_donate">Doniraj</string>
+<string name="cancel">Odustani</string>
+<string name="official_tg_channel">Kanal na Telegramu</string>
+</resources>
