@@ -33,4 +33,6 @@
     <string name="continue_donate">Continue</string>
     <string name="cancel">Cancel</string>
     <string name="official_tg_channel">Telegram channel</string>
+    <string name="get_logs">Create debug file</string>
+    <string name="get_logs_summary">After creating the debug file, you need to send it to the developer, this can be done using Telegram</string>
 </resources>

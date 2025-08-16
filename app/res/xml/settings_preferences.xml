@@ -34,5 +34,9 @@ android:key="official_tg_channel"/>
 android:key="about"
 android:title="@string/service_description"
 android:clickable="false"/>
+<Preference
+android:title="@string/get_logs"
+android:summary="@string/get_logs_summary"
+android:key="get_logs"/>
 </PreferenceCategory>
 </PreferenceScreen>

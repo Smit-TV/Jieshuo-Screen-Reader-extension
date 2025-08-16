@@ -11,8 +11,8 @@ android {
         applicationId = "com.android.talkback"
         minSdk = 28
         targetSdk = 34
-        versionCode = 2
-        versionName = "2025.08.09"
+        versionCode = 3
+        versionName = "2025.08.16"
     }
 
     sourceSets {
@@ -21,6 +21,10 @@ android {
             manifest.srcFile("./AndroidManifest.xml")
             kotlin.srcDirs("./kotlin")
         }
+    }
+
+    lintOptions {
+        disable("MissingTranslation")
     }
 
     buildFeatures {

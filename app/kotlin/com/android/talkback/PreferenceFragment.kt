@@ -50,6 +50,12 @@ class PreferenceFragment(val fragmentResource: Int) : PreferenceFragmentCompat()
         dialog.show()
         true
         }
+
+        val getLogs = findPreference<Preference>("get_logs")
+        getLogs?.setOnPreferenceClickListener { _ ->
+        LogUtils.createDebugFile(requireContext())
+        true
+        }
     }
 
     fun openLink(url: String) {

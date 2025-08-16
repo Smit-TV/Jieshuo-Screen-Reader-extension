@@ -33,4 +33,6 @@
 <string name="continue_donate">Продолжить</string>
 <string name="cancel">Отмена</string>
 <string name="official_tg_channel">Telegram канал</string>
+<string name="get_logs">Создать отладочный файл</string>
+<string name="get_logs_summary">После создания файла логов их необходимо отправить разработчику, это можно сделать с помощью официального Telegram канала</string>
 </resources>

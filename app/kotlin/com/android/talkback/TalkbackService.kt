@@ -10,20 +10,26 @@ import android.view.accessibility.AccessibilityEvent
 import android.view.accessibility.AccessibilityNodeInfo
 import android.view.accessibility.AccessibilityWindowInfo
 import java.util.Locale
+import com.android.talkback.*
+
 
 class TalkbackService : AccessibilityService() {
     private lateinit var prefs: SharedPreferences
     private var keyboardNode: AccessibilityNodeInfo? = null
     private var isKeyboardShowed = false
+    private var isFingerOnScreen = false
 
     override fun onServiceConnected() {
+        super.onServiceConnected()
         prefs = getSharedPreferences("AppSettings", Context.MODE_PRIVATE)
     }
 
     override fun onDestroy() {
         super.onDestroy()
         enableTouch()
+        isFingerOnScreen = false
     }
+
     override fun onGesture(gestureId: Int): Boolean = false
     override fun onGesture(gesture: AccessibilityGestureEvent): Boolean = false
     override fun onInterrupt() {}
@@ -31,7 +37,9 @@ class TalkbackService : AccessibilityService() {
     override fun onAccessibilityEvent(event: AccessibilityEvent) {
         when (event.eventType) {
             AccessibilityEvent.TYPE_WINDOWS_CHANGED -> handleKeyboardInput()
+            AccessibilityEvent.TYPE_TOUCH_EXPLORATION_GESTURE_START -> isFingerOnScreen = true
             AccessibilityEvent.TYPE_TOUCH_EXPLORATION_GESTURE_END -> {
+                isFingerOnScreen = false
                 if (!prefs.getBoolean("single_tap_to_activate", true)) {
                     return
                 }
@@ -40,11 +48,8 @@ class TalkbackService : AccessibilityService() {
             }
             AccessibilityEvent.TYPE_VIEW_HOVER_ENTER -> {
                 val node = event.source ?: return
-                if (node.window?.type == AccessibilityWindowInfo.TYPE_INPUT_METHOD && node.packageName ?: "" != "com.google.android.inputmethod.latin" &&
-                (node.text ?: node.contentDescription != null || 
-                    node.isClickable || node.isLongClickable
-                )) {
-                    keyboardNode = node
+                if (node.window?.type == AccessibilityWindowInfo.TYPE_INPUT_METHOD && node.packageName ?: "" != "com.google.android.inputmethod.latin") {
+                    keyboardNode = if (node.isAccessibilityFocusable) node else node.logicParent
                 } else {
                     keyboardNode = null
                 }
@@ -56,7 +61,7 @@ class TalkbackService : AccessibilityService() {
                 }
                 object : CountDownTimer(delay * 1000, delay) {
                     override fun onTick(tick: Long) {
-                        if (event.source != keyboardNode) {
+                        if (event.source != keyboardNode || !isFingerOnScreen) {
                             cancel()
                         }                        
                     }
@@ -73,7 +78,7 @@ class TalkbackService : AccessibilityService() {
     }
 
     fun handleKeyboardInput() {
-        windows.forEach {
+        windows?.forEach {
             if (it.type == AccessibilityWindowInfo.TYPE_INPUT_METHOD) {
                 disableTouch(it)
                 return
