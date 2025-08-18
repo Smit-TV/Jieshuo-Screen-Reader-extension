@@ -1,0 +1,38 @@
+<resources>
+    <string name="app_name">Extensie Jieshuo</string>
+    <string name="service_summary">Scrie mai repede</string>
+    <string name="service_description">
+        Extensia asta e utilă în următoarele situații
+        \n 1. Extensia le dă acces aplicațiilor Jieshuo, TalkBack și Prudence la Samsung Internet
+        \n 2. Extensia asta te ajută să scrii mai repede pe tastatura Samsung 
+        \n Ai grijă, nu toate tastaturile sunt compatibile — s-ar putea să trebuiască să activezi apăsarea dublă pentru tastare în setările cititorului tău de ecran.
+        \n\n Creat de Smit TV
+        \n https://github.com/Smit-TV
+    </string>
+    <string name="typing">Tastatură</string>
+    <string name="single_tap_to_activate">Activează tastele cu o singură apăsare</string>
+    <string name="single_tap_to_activate_summary">Nu uita să activezi apăsarea dublă pe taste în cititorul tău de ecran</string>
+    <string name="disable_gestures_when_keyboard_is_shown">Dezactivează gesturile când tastatura e deschisă</string>
+    <string name="disable_gestures_when_keyboard_is_shown_summary">
+        Gesturile din zona tastaturii vor fi dezactivate.
+        \n Ai grijă, în zona tastaturii apăsarea dublă nu o să funcționeze.
+        \n Această fucnție ar putea să nu meargă cu TalkBack.
+    </string>
+    <string name="long_press_delay">Întârziere la apăsare lungă</string>
+    <string name="long_press_delay_summary">
+        Apăsarea lungă funcționează atunci când ții apăsată o tastă.
+        \n Folosește 0 ca să dezactivezi funcția asta
+    </string>
+<string name="general">Generale</string>
+<string name="accessibility_settings">Deschide opțiunile de accesibilitate</string>
+<string name="donate">Donează</string>
+<string name="donate_message">
+Mulțumim tuturor celor care au donat!
+\n Apasă pe "Continuă" ca să mergi la pagina de donații
+</string>
+<string name="continue_donate">Continuă</string>
+<string name="cancel">Anulează</string>
+<string name="official_tg_channel">Canal Telegram</string>
+<string name="get_logs">Creează un fișier de depanare</string>
+<string name="get_logs_summary">După ce creezi fișierul de loguri, trebuie să-l trimiți dezvoltatorului — poți face asta prin canalul oficial de Telegram.</string>
+</resources>
