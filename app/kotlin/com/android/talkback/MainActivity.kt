@@ -7,7 +7,7 @@ import android.os.Bundle
 import android.os.PowerManager
 import androidx.appcompat.app.AppCompatActivity
 
-class MainActivity : AppCompatActivity() {
+class TalkBackPreferencesActivity : AppCompatActivity() {
     private lateinit var powerManager: PowerManager
 
 	override fun onCreate(savedInstanceState: Bundle?) {

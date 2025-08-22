@@ -2,17 +2,17 @@
     <string name="app_name">Jieshuo Extension</string>
     <string name="service_summary">Type faster</string>
     <string name="service_description">
-        This extension is useful in the following situations:
-        \n 1. The extension provides Jieshuo, VoiceBack, and Prudence with access to Samsung Internet
-        \n 2. This extension allows faster typing on the Samsung keyboard
-        \n Note that not all keyboards may be supported; you may need to enable double-tap typing in your screen reader settings
+        This extension is useful in the following situations
+        \n 1. The extension provides access for Jieshuo, VoiceBack, and Prudence to Samsung Internet
+        \n 2. This extension allows faster typing on the Samsung keyboard 
+        \n Please note that not all keyboards may be supported, and you may need to enable double-tap typing in your screen reader settings
         \n\n Created by Smit TV
         \n https://github.com/Smit-TV
     </string>
     <string name="typing">Keyboard</string>
     <string name="single_tap_to_activate">Activate keys with a single tap</string>
-    <string name="single_tap_to_activate_summary">Don’t forget to enable double-tap key activation in your screen reader</string>
-    <string name="disable_gestures_when_keyboard_is_shown">Disable gestures when the keyboard is shown</string>
+    <string name="single_tap_to_activate_summary">Don’t forget to enable double-tap typing in your screen reader</string>
+    <string name="disable_gestures_when_keyboard_is_shown">Disable gestures when the keyboard is open</string>
     <string name="disable_gestures_when_keyboard_is_shown_summary">
         Gestures in the keyboard area will be disabled.
         \n Note that double-tap will not work in the keyboard area.
@@ -24,15 +24,24 @@
         \n Use 0 to disable this feature
     </string>
     <string name="general">General</string>
-    <string name="accessibility_settings">Open accessibility settings</string>
+    <string name="accessibility_settings">Open Accessibility</string>
     <string name="donate">Donate</string>
     <string name="donate_message">
-        Thanks to everyone who made a donation!
-        \n Tap "Continue" to go to the donation page
-    </string>
+Thank you to everyone who donated!
+\n Tap "Continue" to go to the donation page
+</string>
     <string name="continue_donate">Continue</string>
     <string name="cancel">Cancel</string>
     <string name="official_tg_channel">Telegram channel</string>
     <string name="get_logs">Create debug file</string>
-    <string name="get_logs_summary">After creating the debug file, you need to send it to the developer, this can be done using Telegram</string>
+    <string name="get_logs_summary">After creating the log file, it should be sent to the developer. This can be done via the official Telegram channel</string>
+    <string name="disable_explore_by_touch">Disable explore by touch when the keyboard is open</string>
+    <string name="disable_explore_by_touch_summary">
+This may improve performance with some keyboards and increase typing speed
+\n Note: This disables explore by touch only in the keyboard area
+</string>
+    <string name="resume_browse_by_touch_and_gesture_detection_when_none_kbd_element_touched">Resume explore by touch and gesture detection when touching an element outside the keyboard</string>
+    <string name="resume_browse_by_touch_and_gesture_detection_when_none_kbd_element_touched_summary">For example: When you touch the back button on the navigation bar</string>
+    <string name="debug_mode">Debug mode</string>
+    <string name="debug_mode_summary">Enabling this mode may reduce performance\nThe file may contain personal data</string>
 </resources>

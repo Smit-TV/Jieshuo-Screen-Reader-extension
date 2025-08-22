@@ -4,6 +4,7 @@
     android:accessibilityFeedbackType="feedbackSpoken|feedbackHaptic|feedbackAudible|feedbackGeneric"
     android:accessibilityFlags="flagDefault|flagReportViewIds|flagRequestFilterKeyEvents|flagEnableAccessibilityVolume|flagRetrieveInteractiveWindows|flagRequestShortcutWarningDialogSpokenFeedback"
     android:canRequestFilterKeyEvents="true"
+    android:canControlMagnification="true"
     android:canRequestTouchExplorationMode="true"
     android:canRetrieveWindowContent="true"
     android:canPerformGestures="true"
@@ -12,5 +13,5 @@
     android:notificationTimeout="0"
     android:interactiveUiTimeout="0"
     android:nonInteractiveUiTimeout="0"
-    android:settingsActivity="com.android.talkback.MainActivity"
-    android:isAccessibilityTool="false" />
+    android:settingsActivity="com.android.talkback.TalkBackPreferencesActivity"
+    android:isAccessibilityTool="true" />

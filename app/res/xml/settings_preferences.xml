@@ -16,7 +16,7 @@ android:title="@string/long_press_delay"
 android:summary="@string/long_press_delay_summary"
 android:dialogTitle="@string/long_press_delay"
 android:key="long_press_delay"
-android:defaultValue="3"
+android:defaultValue="3000"
 android:inputType="number"/>
 <SwitchPreference
 android:title="@string/disable_explore_by_touch"

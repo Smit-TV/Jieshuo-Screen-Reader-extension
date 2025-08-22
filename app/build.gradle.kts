@@ -8,11 +8,11 @@ android {
     compileSdk = 34
 
     defaultConfig {
-        applicationId = "com.android.talkback"
+        applicationId = "com.android.talkback" // for GBoard
         minSdk = 28
         targetSdk = 34
-        versionCode = 4
-        versionName = "2025.08.18"
+        versionCode = 60162622 // the last version of talkback 16.0 Gboard will check it every time when want to show keyboard
+        versionName = "2025.08.22 (BETA)"
     }
 
     sourceSets {
@@ -80,7 +80,5 @@ android {
 
 dependencies {
     implementation("androidx.appcompat:appcompat:1.7.0")
-    implementation("androidx.core:core:1.12.0")
-    implementation("org.json:json:20210307")
     implementation("androidx.preference:preference:1.2.0")
 }

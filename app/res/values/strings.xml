@@ -43,5 +43,5 @@
 <string name="resume_browse_by_touch_and_gesture_detection_when_none_kbd_element_touched">Возобновить исследование касанием и обнаружение жестов при прикосновении к элементу вне клавиатуры</string>
 <string name="resume_browse_by_touch_and_gesture_detection_when_none_kbd_element_touched_summary">Например: Когда вы прикоснетесь к кнопке назад на панели навигации</string>
 <string name="debug_mode">Режим отладки</string>
-<string name="debug_mode_summary">Включение этого режима может снизить производительность</string>
+<string name="debug_mode_summary">Включение этого режима может снизить производительность\nФайл может содержать персональные данные</string>
 </resources>
