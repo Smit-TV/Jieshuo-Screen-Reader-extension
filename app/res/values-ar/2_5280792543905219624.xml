@@ -1,0 +1,47 @@
+<resources>
+    <string name="app_name">Jieshuo Extension</string>
+    <string name="service_summary">اكتب بسرعة أكبر</string>
+    <string name="service_description">
+        هذه الإضافة مفيدة في الحالات التالية
+        \n 1. توفر الإضافة وصولاً لـ Jieshuo و VoiceBack و Prudence إلى متصفح Samsung Internet
+        \n 2. تتيح هذه الإضافة الكتابة بشكل أسرع على لوحة مفاتيح سامسونج
+        \n يرجى ملاحظة أن بعض لوحات المفاتيح قد لا تكون مدعومة، وقد تحتاج إلى تفعيل خيار الكتابة بالنقر المزدوج في إعدادات قارئ الشاشة
+        \n\n تم الإنشاء بواسطة Smit TV
+        \n https://github.com/Smit-TV
+    </string>
+    <string name="typing">لوحة المفاتيح</string>
+    <string name="single_tap_to_activate">تفعيل المفاتيح بنقرة واحدة</string>
+    <string name="single_tap_to_activate_summary">لا تنسَ تفعيل الكتابة بالنقر المزدوج في قارئ الشاشة</string>
+    <string name="disable_gestures_when_keyboard_is_shown">تعطيل الإيماءات عند فتح لوحة المفاتيح</string>
+    <string name="disable_gestures_when_keyboard_is_shown_summary">
+        سيتم تعطيل الإيماءات في منطقة لوحة المفاتيح.
+        \n لاحظ أن النقر المزدوج لن يعمل في منطقة لوحة المفاتيح.
+        \n قد لا تعمل هذه الميزة مع TalkBack.
+    </string>
+    <string name="long_press_delay">تأخير الضغط المطوّل</string>
+    <string name="long_press_delay_summary">
+        يعمل الضغط المطوّل عند الاستمرار بالضغط على المفاتيح.
+        \n استخدم 0 لتعطيل هذه الميزة
+    </string>
+    <string name="general">عام</string>
+    <string name="accessibility_settings">فتح إمكانية الوصول</string>
+    <string name="donate">تبرع</string>
+    <string name="donate_message">
+شكراً لكل من قام بالتبرع!
+\n انقر على "متابعة" للانتقال إلى صفحة التبرع
+</string>
+    <string name="continue_donate">متابعة</string>
+    <string name="cancel">إلغاء</string>
+    <string name="official_tg_channel">قناة تيليجرام</string>
+    <string name="get_logs">إنشاء ملف تتبع الأخطاء</string>
+    <string name="get_logs_summary">بعد إنشاء ملف التتبع، يجب إرساله إلى المطوّر. يمكن القيام بذلك عبر القناة الرسمية على تيليجرام</string>
+    <string name="disable_explore_by_touch">تعطيل الاستكشاف باللمس عند فتح لوحة المفاتيح</string>
+    <string name="disable_explore_by_touch_summary">
+قد يحسّن هذا من الأداء مع بعض لوحات المفاتيح ويزيد من سرعة الكتابة
+\n ملاحظة: هذا الخيار يعطّل الاستكشاف باللمس فقط في منطقة لوحة المفاتيح
+</string>
+    <string name="resume_browse_by_touch_and_gesture_detection_when_none_kbd_element_touched">استئناف الاستكشاف باللمس والتعرّف على الإيماءات عند لمس عنصر خارج لوحة المفاتيح</string>
+    <string name="resume_browse_by_touch_and_gesture_detection_when_none_kbd_element_touched_summary">على سبيل المثال: عند لمس زر الرجوع في شريط التنقل</string>
+    <string name="debug_mode">وضع التصحيح</string>
+    <string name="debug_mode_summary">تفعيل هذا الوضع قد يقلل الأداء\nقد يحتوي الملف على بيانات شخصية</string>
+</resources>

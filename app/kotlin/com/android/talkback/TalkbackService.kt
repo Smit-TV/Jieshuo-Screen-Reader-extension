@@ -18,6 +18,7 @@ import android.graphics.Region
 import android.view.accessibility.AccessibilityEvent
 import android.view.accessibility.AccessibilityNodeInfo
 import android.view.accessibility.AccessibilityWindowInfo
+import android.view.accessibility.AccessibilityManager
 import android.util.Log
 import com.android.talkback.*
 
@@ -69,6 +70,17 @@ class TalkbackService : AccessibilityService() {
         isRunning = false
         enableTouch()
         isFingerOnScreen = false
+        keyboardNode = null
+        if (Build.VERSION.SDK_INT > 32) {
+            clearCache()
+        }
+    }
+
+    override fun onLowMemory() {
+        if (Build.VERSION.SDK_INT > 32) {
+            clearCache()
+        }
+        super.onLowMemory()
     }
 
     override fun onGesture(gestureId: Int): Boolean = false
@@ -130,6 +142,9 @@ fun handleHoverEnter(event: AccessibilityEvent) {
 }
 
 fun handleTouchExplorationGestureEnd(event: AccessibilityEvent) {
+    if (event.packageName == packageName) {
+        return
+    }
     isFingerOnScreen = false
     if (keyboardNode == null || !prefs.getBoolean("single_tap_to_activate", true)) {
         keyboardNode = null

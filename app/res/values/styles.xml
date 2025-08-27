@@ -1,3 +1,7 @@
 <resources>
 <style name="app_theme" parent="Theme.AppCompat.DayNight"/>
+<style name="wrap_text" parent="app_theme">
+<item name="android:layout_width">wrap_content</item>
+<item name="android:layout_height">wrap_content</item>
+</style>
 </resources>

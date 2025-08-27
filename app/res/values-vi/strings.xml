@@ -1,0 +1,41 @@
+<resources>
+    <string name="app_name">Jieshuo Extension</string>
+    <string name="service_summary">Giúp bạn Nhập chữ trên bàn phím một cách nhanh chóng</string>
+    <string name="service_description">
+        Tiện ích mở rộng này hữu ích trong các trường hợp sau:
+        \n 1. Hỗ trợ Jieshuo, VoiceBack và Prudence truy cập vào trình duyệt Samsung Internet.
+        \n 2. Cho phép nhập chữ nhanh hơn trên bàn phím Samsung.
+        \n Lưu ý: Không phải tất cả các bàn phím đều được hỗ trợ, bạn có thể cần bật chế độ nhập bằng cách chạm hai lần trong cài đặt trình đọc màn hình mà bạn đang sử dụng.
+        \n\n Được phát triển bởi Smit TV.
+        \n https://github.com/Smit-TV
+    </string>
+    <string name="typing">Bàn phím</string>
+    <string name="single_tap_to_activate">Chạm một lần để nhập.</string>
+    <string name="single_tap_to_activate_summary">Đừng quên bật chế độ chạm hai lần để nhập trong trình đọc màn hình mà bạn đang sử dụng</string>
+    <string name="disable_gestures_when_keyboard_is_shown">Tạm dừng các cử chỉ khi bàn phím hiển thị.</string>
+    <string name="disable_gestures_when_keyboard_is_shown_summary">
+        Các cử chỉ trong khu vực bàn phím sẽ bị vô hiệu hóa.
+        \n Lưu ý: thao tác chạm hai lần để nhập sẽ không hoạt động trong khu vực bàn phím.
+        \n Tính năng này có thể không hoạt động với TalkBack.
+    </string>
+    <string name="long_press_delay">Độ trễ khi nhấn giữ.</string>
+    <string name="long_press_delay_summary">
+        Nhấn giữ phím để thực hiện thao tác.
+        \n Nhập giá trị là 0 để tắt tính năng này
+    </string>
+    <string name="general">Chung</string>
+    <string name="accessibility_settings">Cài đặt trợ năng</string>
+    <string name="donate">Ủng hộ</string>
+    <string name="donate_message">Xin cảm ơn tất cả những người đã ủng hộ!\n Nhấn "Tiếp tục" để đến trang ủng hộ</string>
+    <string name="continue_donate">Tiếp tục</string>
+    <string name="cancel">Hủy</string>
+    <string name="official_tg_channel">Kênh Telegram chính thức</string>
+    <string name="get_logs">Tạo tệp gỡ lỗi.</string>
+    <string name="get_logs_summary">Sau khi tạo tệp nhật ký, vui lòng gửi cho nhà phát triển. Bạn có thể gửi qua kênh Telegram chính thức</string>
+    <string name="disable_explore_by_touch">Tạm dừng khám phá bằng cách chạm khi bàn phím hiển thị.</string>
+    <string name="disable_explore_by_touch_summary">Có thể giúp cải thiện hiệu suất trên một số bàn phím và tăng tốc độ nhập.\n Lưu ý: chỉ tắt tính năng này trong khu vực bàn phím</string>
+    <string name="resume_browse_by_touch_and_gesture_detection_when_none_kbd_element_touched">Khôi phục khám phá bằng cách chạm và phát hiện cử chỉ khi chạm vào phần tử ngoài bàn phím.</string>
+    <string name="resume_browse_by_touch_and_gesture_detection_when_none_kbd_element_touched_summary">Ví dụ: khi bạn chạm vào nút quay lại trên thanh điều hướng</string>
+    <string name="debug_mode">Chế độ gỡ lỗi.</string>
+    <string name="debug_mode_summary">Bật chế độ này có thể làm giảm hiệu suất\nTệp có thể chứa dữ liệu cá nhân</string>
+</resources>

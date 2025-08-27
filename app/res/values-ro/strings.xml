@@ -35,4 +35,13 @@ Mulțumim tuturor celor care au donat!
 <string name="official_tg_channel">Canal Telegram</string>
 <string name="get_logs">Creează un fișier de depanare</string>
 <string name="get_logs_summary">După ce creezi fișierul de loguri, trebuie să-l trimiți dezvoltatorului — poți face asta prin canalul oficial de Telegram.</string>
+<string name="disable_explore_by_touch">Dezactivează explorarea prin atingere când tastatura e deschisă</string>
+<string name="disable_explore_by_touch_summary">
+Poate îmbunătăți funcționarea cu unele tastaturi și face scrisul mai rapid
+\n Atenție: Asta dezactivează explorarea prin atingere doar în zona tastaturii
+</string>
+<string name="resume_browse_by_touch_and_gesture_detection_when_none_kbd_element_touched">Reia explorarea prin atingere și detectarea gesturilor când atingi un element din afara tastaturii</string>
+<string name="resume_browse_by_touch_and_gesture_detection_when_none_kbd_element_touched_summary">De exemplu: Când atingi butonul înapoi de pe bara de navigare</string>
+<string name="debug_mode">Modul de depanare</string>
+<string name="debug_mode_summary">Activarea acestui mod poate scădea performanța\nFișierul poate conține date personale</string>
 </resources>

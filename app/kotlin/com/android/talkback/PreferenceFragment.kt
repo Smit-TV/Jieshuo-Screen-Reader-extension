@@ -29,7 +29,6 @@ class PreferenceFragment(val fragmentResource: Int) : PreferenceFragmentCompat()
         }
 
         val donate = findPreference<Preference>("donate")
-        donate?.setVisible(false)
         donate?.setOnPreferenceClickListener { _ ->
         val dialog = AlertDialog.Builder(requireContext(), R.style.app_theme)
         .setTitle(R.string.donate)
@@ -38,7 +37,7 @@ class PreferenceFragment(val fragmentResource: Int) : PreferenceFragmentCompat()
         dialog.dismiss()
         }
         .setPositiveButton(R.string.continue_donate) { dialog, _ ->
-        openLink("https://donationalerts.com/")
+        openLink("https://donationalerts.com/r/smit_tv_a11y_dev")
         }
         .create()
 

@@ -11,8 +11,8 @@ android {
         applicationId = "com.android.talkback" // for GBoard
         minSdk = 28
         targetSdk = 34
-        versionCode = 60162622 // the last version of talkback 16.0 Gboard will check it every time when want to show keyboard
-        versionName = "2025.08.22 (BETA)"
+        versionCode = 60162623 // the last version of talkback 16.0 Gboard will check it every time when want to show keyboard
+        versionName = "2025.08.27"
     }
 
     sourceSets {

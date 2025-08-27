@@ -1,0 +1,47 @@
+<resources>
+    <string name="app_name">Jieshuo Extension</string>
+    <string name="service_summary">Digite mais rápido</string>
+    <string name="service_description">
+        Esta extensão é útil nas seguintes situações
+        \n 1. A extensão fornece acesso para Jieshuo, VoiceBack e Prudence no Samsung Internet
+        \n 2. Esta extensão permite digitar mais rápido no teclado Samsung
+        \n Observe que nem todos os teclados podem ser suportados, e você pode precisar ativar a digitação com toque duplo nas configurações do seu leitor de tela
+        \n\n Criado por Smit TV
+        \n https://github.com/Smit-TV
+    </string>
+    <string name="typing">Teclado</string>
+    <string name="single_tap_to_activate">Ativar teclas com um único toque</string>
+    <string name="single_tap_to_activate_summary">Não se esqueça de ativar a digitação com toque duplo no seu leitor de tela</string>
+    <string name="disable_gestures_when_keyboard_is_shown">Desativar gestos quando o teclado estiver aberto</string>
+    <string name="disable_gestures_when_keyboard_is_shown_summary">
+        Gestos na área do teclado serão desativados.
+        \n Observe que o toque duplo não funcionará na área do teclado.
+        \n Este recurso pode não funcionar com o TalkBack.
+    </string>
+    <string name="long_press_delay">Atraso de pressionamento longo</string>
+    <string name="long_press_delay_summary">
+        O pressionamento longo funciona ao segurar as teclas.
+        \n Use 0 para desativar este recurso
+    </string>
+    <string name="general">Geral</string>
+    <string name="accessibility_settings">Abrir Acessibilidade</string>
+    <string name="donate">Doar</string>
+    <string name="donate_message">
+Obrigado a todos que doaram!
+\n Toque em "Continuar" para ir à página de doação
+</string>
+    <string name="continue_donate">Continuar</string>
+    <string name="cancel">Cancelar</string>
+    <string name="official_tg_channel">Canal no Telegram</string>
+    <string name="get_logs">Criar arquivo de depuração</string>
+    <string name="get_logs_summary">Após criar o arquivo de log, ele deve ser enviado ao desenvolvedor. Isso pode ser feito pelo canal oficial do Telegram</string>
+    <string name="disable_explore_by_touch">Desativar exploração por toque quando o teclado estiver aberto</string>
+    <string name="disable_explore_by_touch_summary">
+Isso pode melhorar o desempenho com alguns teclados e aumentar a velocidade de digitação
+\n Observação: Isso desativa a exploração por toque apenas na área do teclado
+</string>
+    <string name="resume_browse_by_touch_and_gesture_detection_when_none_kbd_element_touched">Retomar exploração por toque e detecção de gestos ao tocar em um elemento fora do teclado</string>
+    <string name="resume_browse_by_touch_and_gesture_detection_when_none_kbd_element_touched_summary">Por exemplo: Ao tocar no botão de voltar na barra de navegação</string>
+    <string name="debug_mode">Modo de depuração</string>
+    <string name="debug_mode_summary">Ativar este modo pode reduzir o desempenho\nO arquivo pode conter dados pessoais</string>
+</resources>
