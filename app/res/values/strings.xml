@@ -44,4 +44,9 @@
 <string name="resume_browse_by_touch_and_gesture_detection_when_none_kbd_element_touched_summary">Например: Когда вы прикоснетесь к кнопке назад на панели навигации</string>
 <string name="debug_mode">Режим отладки</string>
 <string name="debug_mode_summary">Включение этого режима может снизить производительность\nФайл может содержать персональные данные</string>
+    <string name="speak_keyboard_input_aloud_when_touch_exploration_is_off">Озвучивать вводимый текст когда изучение косанием отключено</string>
+    <string name="this_function_is_simular_to_samsung_speak_keyboard_input_aloud">Эта функция похожа на функцию озвучивание ввода клавиатуры на устройствах Samsung</string>
+    <string name="speak_keyboard_input_aloud">Озвучивание ввода на клавиатуре</string>
+    <string name="speak_word_after_space">Озвучивать слово после пробела</string>
+    <string name="increase_pitch_for_capital_letters">Повышать тон для заглавных букв</string>
 </resources>

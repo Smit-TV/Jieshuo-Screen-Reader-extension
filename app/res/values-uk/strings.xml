@@ -1,0 +1,47 @@
+<resources>
+    <string name="app_name">Jieshuo Extension</string>
+    <string name="service_summary">Друкуйте швидше</string>
+    <string name="service_description">
+        Це розширення корисне в таких ситуаціях:
+        \n 1. Розширення надає доступ Jieshuo, VoiceBack та Prudence до Samsung Internet;
+        \n 2. Це розширення дає змогу друкувати швидше на клавіатурі Samsung.
+        \n Зверніть увагу, що не всі клавіатури можуть підтримуватися. Можливо, вам доведеться увімкнути подвійне натискання для друку в налаштуваннях вашого екранного диктора.
+        \n\n Створено Smit TV
+        \n https://github.com/Smit-TV
+    </string>
+    <string name="typing">Клавіатура</string>
+    <string name="single_tap_to_activate">Активувати клавіші одним дотиком</string>
+    <string name="single_tap_to_activate_summary">Не забудьте увімкнути подвійне натискання для друку у вашому екранному дикторі</string>
+    <string name="disable_gestures_when_keyboard_is_shown">Вимкнути жести, коли клавіатура відкрита</string>
+    <string name="disable_gestures_when_keyboard_is_shown_summary">
+        Жести в області клавіатури будуть вимкнені.
+        \n Зверніть увагу, що в області клавіатури подвійний дотик не працюватиме.
+        \n Ця функція може не працювати з TalkBack.
+    </string>
+    <string name="long_press_delay">Затримка перед довгим натисканням</string>
+    <string name="long_press_delay_summary">
+        Довге натискання працює при утриманні клавіш.
+        \n Використовуйте 0 для вимкнення цієї функції
+    </string>
+<string name="general">Загальні</string>
+<string name="accessibility_settings">Відкрити спеціальні можливості</string>
+<string name="donate">Внести пожертву</string>
+<string name="donate_message">
+Дякую всім, хто зробив пожертву!
+\n Натисніть "Продовжити", щоб перейти на сторінку пожертв
+</string>
+<string name="continue_donate">Продовжити</string>
+<string name="cancel">Скасувати</string>
+<string name="official_tg_channel">Telegram канал</string>
+<string name="get_logs">Створити файл налагодження</string>
+<string name="get_logs_summary">Після створення файлу налагодження, його необхідно відправити розробнику, це можна зробити за допомогою офіційного Telegram каналу</string>
+<string name="disable_explore_by_touch">Вимкнути дослідження дотиком коли клавіатура відкрита</string>
+<string name="disable_explore_by_touch_summary">
+Це може покращити роботу з деякими клавіатурами та прискорити швидкість друку.
+\n Зверніть увагу: дослідження дотиком вимикається лише в області клавіатури
+</string>
+<string name="resume_browse_by_touch_and_gesture_detection_when_none_kbd_element_touched">Відновити дослідження дотиком та виявлення жестів при торканні до елементів поза клавіатурою.</string>
+<string name="resume_browse_by_touch_and_gesture_detection_when_none_kbd_element_touched_summary">Наприклад: Коли ви торкнетесь кнопки назад на панелі навігації</string>
+<string name="debug_mode">Режим налагодження</string>
+<string name="debug_mode_summary">Увімкнення цього режиму може знизити продуктивність.\nФайл може містити персональні дані</string>
+</resources>

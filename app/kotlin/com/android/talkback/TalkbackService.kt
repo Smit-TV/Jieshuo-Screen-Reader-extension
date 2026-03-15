@@ -15,14 +15,17 @@ import android.provider.Settings
 import android.net.Uri
 import android.graphics.Rect
 import android.graphics.Region
+import android.speech.tts.TextToSpeech
 import android.view.accessibility.AccessibilityEvent
 import android.view.accessibility.AccessibilityNodeInfo
 import android.view.accessibility.AccessibilityWindowInfo
 import android.view.accessibility.AccessibilityManager
 import android.util.Log
+import android.view.KeyEvent
 import com.android.talkback.*
 
-class TalkbackService : AccessibilityService() {
+class TalkbackService : AccessibilityService(),
+TextToSpeech.OnInitListener {
     private lateinit var prefs: SharedPreferences
     private lateinit var powerManager: PowerManager
     private var keyboardNode: AccessibilityNodeInfo? = null
@@ -30,9 +33,15 @@ class TalkbackService : AccessibilityService() {
     private var isFingerOnScreen = false
     private var isTEAndGDResumed = false
     private var isRunning = false
+    private lateinit var accessibilityManager: AccessibilityManager
+    private lateinit var tts: TextToSpeech
 
     companion object {
         const val TAG = "JieshuoExtension"
+    }
+
+    override fun onInit(status: Int) {
+        tts.setLanguage(tts.defaultLanguage ?: return)
     }
 
     override fun onServiceConnected() {
@@ -60,6 +69,8 @@ class TalkbackService : AccessibilityService() {
         if (prefs.getBoolean("debug_mode", false)) {
             LogUtils.createDebugFile(this, "onCreate")
         }
+        accessibilityManager = getSystemService(Context.ACCESSIBILITY_SERVICE) as AccessibilityManager
+        tts = TextToSpeech(this, this)
     }
 
     override fun onDestroy() {
@@ -67,6 +78,7 @@ class TalkbackService : AccessibilityService() {
             LogUtils.createDebugFile(this, "onDestroy")
         }
         super.onDestroy()
+        tts.shutdown()
         isRunning = false
         enableTouch()
         isFingerOnScreen = false
@@ -99,6 +111,7 @@ class TalkbackService : AccessibilityService() {
         AccessibilityEvent.TYPE_TOUCH_EXPLORATION_GESTURE_START -> isFingerOnScreen = true
         AccessibilityEvent.TYPE_TOUCH_EXPLORATION_GESTURE_END -> handleTouchExplorationGestureEnd(event)
         AccessibilityEvent.TYPE_TOUCH_INTERACTION_END -> handleTouchInteractionEnd()
+        AccessibilityEvent.TYPE_VIEW_TEXT_CHANGED -> handleKeyClick(event)
     }
  } catch (e: Throwable) {
     if (prefs.getBoolean("debug_mode", false)) {
@@ -261,4 +274,78 @@ fun disableBrowseByTouch(window: AccessibilityWindowInfo) {
             setTouchExplorationPassthroughRegion(0, region)
         }
     }
+
+    fun handleKeyClick(event: AccessibilityEvent) {
+        if (accessibilityManager.isTouchExplorationEnabled || !prefs.getBoolean("speak_keyboard_input_aloud", false)) {
+            return
+        }
+
+        var text = event.text?.joinToString(separator = " ") ?: event.contentDescription ?: return
+        val beforeText = event.beforeText ?: return
+
+        // EditText is empty so we expect that editText is cleared by user
+
+        val node = findFocus(AccessibilityNodeInfo.FOCUS_INPUT)
+        if (node != null && node.isShowingHintText ||
+            event.removedCount == beforeText.length && event.addedCount < 1) {
+            speak(beforeText)
+            return
+
+        }
+
+        val currentCaretPosition = (if (event.fromIndex < 0) node?.textSelectionEnd else event.fromIndex + event.addedCount) ?: -1
+
+        var i = 0
+        var typedLetter = ""
+        while (i <= text.length || i <= beforeText.length) {
+            val currentTextLetter = text.getOrNull(i)?.toString()
+            val beforeTextLetter = beforeText.getOrNull(i)?.toString()
+
+
+            if (currentTextLetter == null && beforeTextLetter == null) {
+                break
+            }
+
+            // Text was removed by user
+            if (currentTextLetter == null && beforeTextLetter != null) {
+                typedLetter = beforeText.substring(i)
+                break
+            }
+            // User is typing
+            if (beforeTextLetter == null && currentTextLetter != null) {
+                typedLetter = text.substring(i)
+                break
+            }
+            i++
+            if (currentTextLetter == beforeTextLetter) {
+                continue
+            }
+
+
+            typedLetter = try { text.substring(event.fromIndex + event.removedCount, event.fromIndex + event.addedCount) } catch (e:Exception) {
+                ""
+            }
+            if (typedLetter == "") {
+                typedLetter = try { beforeText.substring(event.fromIndex + event.addedCount, event.fromIndex + event.removedCount) } catch (e: java.lang.Exception) { "" }
+            }
+                break
+        }
+
+        if (prefs.getBoolean("speak_word_after_space", true) && currentCaretPosition > -1 && (typedLetter == " " || typedLetter == "\n")) {
+            tts.speak("$currentCaretPosition", 0, null, null)
+            val words = text.substring(0, currentCaretPosition).trimEnd().split("\\s+".toRegex())
+            typedLetter = words.last()
+        }
+
+        speak(typedLetter)
+    }
+
+    fun speak(text: CharSequence) {
+        if (text.length == 1 && text[0].isUpperCase() && prefs.getBoolean("increase_pitch_for_capital_letters", true)) {
+            tts.setPitch(1.5f)
+        }
+        tts.speak(text, TextToSpeech.QUEUE_FLUSH, null, null)
+        tts.setPitch(1.0f)
+    }
+
 }

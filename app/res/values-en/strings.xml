@@ -44,4 +44,9 @@ This may improve performance with some keyboards and increase typing speed
     <string name="resume_browse_by_touch_and_gesture_detection_when_none_kbd_element_touched_summary">For example: When you touch the back button on the navigation bar</string>
     <string name="debug_mode">Debug mode</string>
     <string name="debug_mode_summary">Enabling this mode may reduce performance\nThe file may contain personal data</string>
+    <string name="speak_keyboard_input_aloud_when_touch_exploration_is_off">Speak typed text aloud when touch exploration is off</string>
+    <string name="this_function_is_simular_to_samsung_speak_keyboard_input_aloud">This feature is similar to the Samsung "Speak keyboard input aloud" feature</string>
+    <string name="speak_keyboard_input_aloud">Speak keyboard input aloud</string>
+    <string name="speak_word_after_space">Speak word after space</string>
+    <string name="increase_pitch_for_capital_letters">Increase pitch for capital letters</string>
 </resources>

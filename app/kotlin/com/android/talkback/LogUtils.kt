@@ -9,45 +9,49 @@ import java.io.File
 
 object LogUtils {
     fun createDebugFile(context: Context, message: String? = null) {
-        if (message != null) {
-            val file = File(context.getFilesDir().absolutePath, "/debug_messages.txt")
+        try {
+            if (message != null) {
+                val file = File(context.getFilesDir().absolutePath, "/debug_messages.txt")
+                if (!file.exists()) {
+                    file.createNewFile()
+                }
+                file.appendText(message)
+                file.appendText("\n")
+                return
+            }
+
+            val am = context.getSystemService(Context.ACTIVITY_SERVICE) as ActivityManager
+            val errors = am.getProcessesInErrorState()
+            val file = File(context.getFilesDir().absolutePath, "/logs.txt")
             if (!file.exists()) {
                 file.createNewFile()
             }
-            file.appendText(message)
-            file.appendText("\n")
-            return
-        }
-
-        val am = context.getSystemService(Context.ACTIVITY_SERVICE) as ActivityManager
-        val errors = am.getProcessesInErrorState()
-        val file = File(context.getFilesDir().absolutePath, "/logs.txt")
-        if (!file.exists()) {
-            file.createNewFile()
-        }
-        file.writeText("")
-        if (errors != null) {
-        for (error in errors) {
-            error ?: continue
-            val errorInfo = getErrorInfo(error)
-            file.appendText(errorInfo ?: "")
-            file.appendText("\n")
-        }
-        }
-
-        if (Build.VERSION.SDK_INT > 29) {
-                    val exitInfoList = am.getHistoricalProcessExitReasons(context.packageName, 0, 0)
-            for (exitInfo in exitInfoList) {
-                file.appendText(exitInfo.toString())
-                file.appendText("\n")
+            file.writeText("")
+            if (errors != null) {
+                for (error in errors) {
+                    error ?: continue
+                    val errorInfo = getErrorInfo(error)
+                    file.appendText(errorInfo ?: "")
+                    file.appendText("\n")
+                }
             }
-        }
-        val debugMessages = File(context.getFilesDir().absolutePath, "/debug_messages.txt")
-        if (debugMessages.exists()) {
-            file.appendText(debugMessages.readText())
-        }
 
-        sendFile(file, context)
+            if (Build.VERSION.SDK_INT > 29) {
+                val exitInfoList = am.getHistoricalProcessExitReasons(context.packageName, 0, 0)
+                for (exitInfo in exitInfoList) {
+                    file.appendText(exitInfo.toString())
+                    file.appendText("\n")
+                }
+            }
+            val debugMessages = File(context.getFilesDir().absolutePath, "/debug_messages.txt")
+            if (debugMessages.exists()) {
+                file.appendText(debugMessages.readText())
+            }
+
+            sendFile(file, context)
+        } catch (e: Throwable) {
+            e.printStackTrace()
+        }
     }
 
     fun sendFile(file: File, context: Context) {

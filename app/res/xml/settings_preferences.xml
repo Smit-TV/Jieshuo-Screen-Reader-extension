@@ -54,4 +54,22 @@ android:title="@string/get_logs"
 android:summary="@string/get_logs_summary"
 android:key="get_logs"/>
 </PreferenceCategory>
+    <PreferenceCategory
+        android:title="@string/speak_keyboard_input_aloud">
+        <SwitchPreference
+            android:title="@string/speak_keyboard_input_aloud_when_touch_exploration_is_off"
+            android:summary="@string/this_function_is_simular_to_samsung_speak_keyboard_input_aloud"
+            android:key="speak_keyboard_input_aloud"
+            android:defaultValue="false"/>
+        <SwitchPreference
+            android:key="increase_pitch_for_capital_letters"
+            android:dependency="speak_keyboard_input_aloud"
+            android:title="@string/increase_pitch_for_capital_letters"
+            android:defaultValue="true"/>
+        <SwitchPreference
+            android:key="speak_word_after_space"
+            android:dependency="speak_keyboard_input_aloud"
+            android:title="@string/speak_word_after_space"
+            android:defaultValue="true"/>
+    </PreferenceCategory>
 </PreferenceScreen>

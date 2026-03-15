@@ -1,0 +1,47 @@
+<resources>
+    <string name="app_name">जिएशुओ एक्सटेन्सन</string>
+    <string name="service_summary">छिटो टाइप गर्नुहोस्</string>
+    <string name="service_description">
+        यो एक्सटेन्सन तलका अवस्थामा उपयोगी हुन्छ
+        \n 1. यो एक्सटेन्सनले Jieshuo, VoiceBack र Prudence लाई Samsung Internet मा पहुँच दिन्छ
+        \n 2. यो एक्सटेन्सनले Samsung किबोर्डमा टाइपिङ छिटो बनाउन मद्दत गर्छ 
+        \n ध्यान दिनुहोस्, सबै किबोर्डहरूले यो सुविधा समर्थन नगर्न सक्छन्, तपाईंलाई आफ्नो स्क्रीन रिडरको सेटिङमा टाइपिङका लागि डबल ट्याप सक्षम गर्नुपर्ने हुन सक्छ
+        \n\n Smit TV द्वारा निर्मित
+        \n https://github.com/Smit-TV
+    </string>
+    <string name="typing">किबोर्ड</string>
+    <string name="single_tap_to_activate">एउटा ट्यापले कुन्जी सक्रिय गर्नुहोस्</string>
+    <string name="single_tap_to_activate_summary">आफ्नो स्क्रीन रिडरमा कुन्जी सक्रिय गर्ने डबल ट्याप अन गर्न नबिर्सनुहोस्</string>
+    <string name="disable_gestures_when_keyboard_is_shown">किबोर्ड खुल्दा जेस्चर अक्षम गर्नुहोस्</string>
+    <string name="disable_gestures_when_keyboard_is_shown_summary">
+        किबोर्ड क्षेत्रमा जेस्चरहरू अक्षम हुनेछन्।
+        \n ध्यान दिनुहोस्, किबोर्ड क्षेत्रमा डबल ट्याप कार्य गर्ने छैन।
+        \n यो सुविधा TalkBack सँग काम नगर्न सक्छ।
+    </string>
+    <string name="long_press_delay">लामो ट्याप ढिलाइ</string>
+    <string name="long_press_delay_summary">
+        लामो ट्याप कुन्जीलाई थिचिराख्दा मात्र काम गर्छ।
+        \n यो सुविधा अक्षम गर्न 0 प्रयोग गर्नुहोस्
+    </string>
+    <string name="general">साधारण</string>
+    <string name="accessibility_settings">विशेष पहुँच सेटिङ खोल्नुहोस्</string>
+    <string name="donate">दान गर्नुहोस्</string>
+    <string name="donate_message">
+सबैलाई धन्यवाद जसले दान गर्नुभयो!
+\n "जारी राख्नुहोस्" थिचेर दान पृष्ठमा जानुहोस्
+    </string>
+    <string name="continue_donate">जारी राख्नुहोस्</string>
+    <string name="cancel">रद्द गर्नुहोस्</string>
+    <string name="official_tg_channel">आधिकारिक टेलिग्राम च्यानल</string>
+    <string name="get_logs">डिबग फाइल सिर्जना गर्नुहोस्</string>
+    <string name="get_logs_summary">लग फाइल सिर्जना भएपछि, यसलाई विकासकर्तालाई पठाउनु आवश्यक हुन्छ, जुन आधिकारिक टेलिग्राम च्यानलमार्फत गर्न सकिन्छ</string>
+    <string name="disable_explore_by_touch">किबोर्ड खुल्दा टचद्वारा अन्वेषण अक्षम गर्नुहोस्</string>
+    <string name="disable_explore_by_touch_summary">
+यसले केही किबोर्डमा कार्यक्षमता सुधार गर्न र टाइपिङ गति बढाउन सक्छ
+\n ध्यान दिनुहोस्: यसले टचद्वारा अन्वेषण केवल किबोर्ड क्षेत्रमा मात्र अक्षम गर्छ
+    </string>
+    <string name="resume_browse_by_touch_and_gesture_detection_when_none_kbd_element_touched">किबोर्ड बाहिरका तत्व छुँदा टच र जेस्चर पहिचान पुनः सुरु गर्नुहोस्</string>
+    <string name="resume_browse_by_touch_and_gesture_detection_when_none_kbd_element_touched_summary">उदाहरण: जब तपाईं नेभिगेशन बारमा ब्याक बटन छुनुहुन्छ</string>
+    <string name="debug_mode">डिबग मोड</string>
+    <string name="debug_mode_summary">यो मोड सक्षम गर्दा कार्यसम्पादन कम हुन सक्छ\nफाइलमा व्यक्तिगत डाटा समावेश हुन सक्छ</string>
+</resources>
